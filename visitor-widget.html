@@ -1,0 +1,12 @@
+<div class="col-md-4">
+  <div class="panel panel-success">
+    <div class="panel-heading">Who visited AppStore</div>
+    <div class="row panel-body">
+      <span class="btn btn-info" ng-show="storeCtrl.getUserCount">Total count is <span class="badge">{{storeCtrl.users.length}}</span></span>
+      <ul ng-repeat="u in storeCtrl.users">
+        <li>{{u.userName}}</li>
+        <li>Visited on {{u.visitedOn | date:'medium'}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
