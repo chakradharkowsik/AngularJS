@@ -1,0 +1,15 @@
+<div class="col-md-4">
+  <form name="userForm" ng-submit="userForm.$valid && storeCtrl.addNewUser(storeCtrl.currentUser.userName)" novalidate>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Welcome App from AppStore</div>
+      <div class="row panel-body">
+        <span class="col-md-4">Enter your Name</span>
+        <input class="col-md-8" ng-model="storeCtrl.currentUser.userName" required/>
+        <input type="submit" class="col-md-6 btn btn-primary" />
+        <br />
+        <span class="highlight" ng-show="storeCtrl.currentUser.userName.length">Hello {{storeCtrl.currentUser.userName}} </span>
+      </div>
+      <div class="panel-footer">© Chakradhar</div>
+    </div>
+  </form>
+</div>

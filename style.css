@@ -1,0 +1,17 @@
+/* Styles go here */
+.highlight {
+font-size:14px;
+font-family:arial;
+color:#0000ff;
+}
+p{
+color:green;
+}
+.ng-dirty.ng-invalid
+{
+border-color:red;
+}
+.ng-valid.ng-dirty
+{
+ border-color:green;
+}
